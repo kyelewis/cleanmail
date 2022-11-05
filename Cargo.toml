@@ -1,0 +1,10 @@
+[package]
+name = "cleanmail"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+async-imap = { version = "0.6.0", features = ["runtime-tokio"], default-features = false }
+async-native-tls = { version = "0.4.0", features = ["runtime-tokio"], default-features = false }
+futures = "0.3.21"
